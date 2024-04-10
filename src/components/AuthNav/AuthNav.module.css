@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .link {
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 15px;
+    color: #483723;
+    transition: border 250ms ease-in, background-color 250ms ease-in, color 250ms ease-in;
+  }
+  
+  .isActive {
+    color: #242424;
+    background-color: #cf9999;
+    border: 1px solid #ad5a5a;
+  }
+  
+  .isActive:hover,
+  .isActive:focus {
+    background-color: #be7979;
+  }

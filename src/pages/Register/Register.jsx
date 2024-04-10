@@ -1,6 +1,12 @@
 import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
+import css from './Register.module.css';
 
-const Register = () => {
-    return <RegistrationForm />
-};
-export default Register;
+export default function Register () {
+
+    return (
+        <div className={css.wrapper}>
+         
+        <RegistrationForm />  
+      </div>
+    );
+}

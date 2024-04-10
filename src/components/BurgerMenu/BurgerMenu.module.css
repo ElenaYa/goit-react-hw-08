@@ -1,0 +1,55 @@
+.menuWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  
+    background-color: #45444387;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in, visibility 250ms ease-in;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+  
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #7f6963;
+    border-radius: 10px;
+  
+    background-color: #f2eceb;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+  .isOpen {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }

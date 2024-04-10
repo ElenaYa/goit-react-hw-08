@@ -1,23 +1,20 @@
 import { FaPhoneAlt, FaUser } from "react-icons/fa";
+import DeleteModal from "../DeleteModal/DeleteModal";
+import { useState } from "react";
 import css from './Contact.module.css';
-import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contactsOps";
-import toast from 'react-hot-toast';
+
 
 export default function Contact ({ data: { name, number, id }}) {
 
-    const dispatch = useDispatch();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const handleDelete = () => {
-      dispatch(deleteContact(id))
-      .unwrap()
-      .then(() => {
-        toast.success("Contact is deleted");
-      })
-      .catch(() => {
-        toast.error("Failed. Try again!");
-      });
-    };
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <div className={css.contactContainer}>
@@ -31,7 +28,8 @@ export default function Contact ({ data: { name, number, id }}) {
         </p>
      
           <button type="button" className={css.button} 
-          onClick={handleDelete}>Delete</button>
+          onClick={openModal}>Delete</button>
+          <DeleteModal value={id} modalIsOpen={modalIsOpen} onCloseModal={closeModal}/>
     </div>
   );
 }

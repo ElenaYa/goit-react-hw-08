@@ -1,7 +1,7 @@
 .form {
     border: 2px solid rgb(74, 71, 71);
     background-color: rgb(245, 235, 235);
-    border-radius: 6px;
+    border-radius: 15px;
     max-width: 400px;
     padding: 16px;
     display: flex;
@@ -14,28 +14,32 @@
   .input {
     width: 360px;
     height: 32px;
+    border-radius: 6px;
     margin-bottom: 8px;
     margin-top: 8px;
     background-color: rgb(253, 249, 249);
     color: inherit;
+    padding: 4px 8px;
   }
   .text {
     font-weight: 600;
     font-size: 18px;
   }
-  .button { 
-    padding: 6px 8px;
-    border-radius: 6px;
-    border: none;
-    font-size: 18px;
-    background-color: rgb(196, 189, 189);
-    transition: background-color 250ms ease-in;
-  }
-.button:hover,
-.button:focus {
-  background-color: #debfbf;
-}
+ 
   .error {
     color: red;
     font-size: 12px;
+  }
+  .button {
+    padding: 8px 16px;
+    border: 1px solid #ad5a5a;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: #cf9999;
+    font-size: 16px;
+    transition: background-color 250ms ease-in;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #be7979;
   }

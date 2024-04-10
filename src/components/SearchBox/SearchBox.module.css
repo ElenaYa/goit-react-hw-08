@@ -15,10 +15,10 @@
   .input {
     width: 360px;
     height: 32px;
+    border-radius: 6px;
     margin-bottom: 8px;
-    border: 2px solid inherit;
-    border-radius: 4px;
+    margin-top: 8px;
     background-color: rgb(253, 249, 249);
     color: inherit;
+    padding: 4px 8px;
   }
- 

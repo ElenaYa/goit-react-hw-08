@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .close {
+    width: 40px;
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  .button {
+    width: 100px;
+    padding: 8px 16px;
+    border: 1px solid #ad5a5a;
+    border-radius: 15px;
+    margin: 0 auto;
+  
+    background-color: #cf9999;
+  
+    transition: background-color 250ms ease-in;
+  }
+  
